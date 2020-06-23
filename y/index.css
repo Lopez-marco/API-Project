@@ -1,5 +1,5 @@
 body{
-background-image: url(./assets/cook-366875_1920.jpg);
+background-image: url(./assets/top-recipe.png);
 width: 100%;
 height: 100%;
 }
@@ -29,6 +29,7 @@ p{
   }
   
   .card {
+    place-items: center;
     grid-area: 1 / 1;
     height: 200px;
     width: 400px;
@@ -37,17 +38,18 @@ p{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
-    color: white;
+    padding: 25px;
+    color: black;
+    text-align: center;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 20px;
     font-weight: 900;
     backface-visibility: hidden;
     box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
   }
   
   h1 {
-    font-size: 60px;
+    font-size: 22px;
     font-weight: 900;
   }
   
@@ -73,7 +75,7 @@ p{
     background: transparent;
     transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
     pointer-events: none;
-    border: var(--bw) solid #000;
+    border: var(--bw) solid white;
     box-sizing: content-box;
   }
   
@@ -94,8 +96,94 @@ p{
   body {
     display: grid;
     place-items: center;
-    /* background:
-      linear-gradient(to bottom right, #3C4BBD 15%, transparent),
-      radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
-      linear-gradient(to bottom right, #3C4BBD, #57ADD8); */
   }
+
+  .search{
+      color:white;
+  }
+
+  h2{
+      color: white;
+  }
+
+  .wrapper-recipe{
+    width: 80%;
+    margin: 0 auto;
+}
+.results{
+    flex:1;
+    padding: 10px;
+}
+
+
+  .recipe{
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+
+  img{
+    float: left;
+    margin-left: 20px;
+    max-width: 200px;
+    padding-bottom: 15px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+footer{
+    background-image: url(./assets/buttom-recipe.png);
+    width: 100%;
+    height: 100%;
+    /* image-resolution: 20%; */
+}
+
+  /* iPad Pro PORTRAIT */
+@media screen and (max-width: 1024px) {
+}
+/* iPad Pro LANDSCAPE*/
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+}
+/* iPad PORTRAIT*/
+@media screen and (max-width: 769px) {
+}
+/* iPad LANDSCAPE*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}
+/* iPhone 6/7/8 Plus PORTRAIT */
+@media screen and (max-width: 414px) {
+}
+/* iPhone 6/7/8 Plus LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 736px) and (orientation : landscape) {
+}
+/* Pixel 2 & Pixel 2 XL PORTRAIT */
+@media screen and (max-width: 412px) {
+}
+/* Pixel 2 LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) {
+}
+/* Pixel 2 XL LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 823px) and (orientation : landscape) {
+}
+/* iPhone 6/7/8 & iPhone X PORTRAIT */
+@media screen and (max-width: 400px) {
+}
+/* iPhone 6/7/8 LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 667px) and (orientation : landscape) {
+}
+/* Iphone X LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 822px) and (orientation : landscape) {
+}
+/* Galaxy S5 PORTRAIT */
+@media screen and (max-width: 375px) {
+}
+/* Galaxy S5 LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 640px) and (orientation : landscape) {
+}
+/* iPhone 5/SE PORTRAIT */
+@media screen and (max-width: 330px) {
+}
+/* iPhone 5/SE LANDSCAPE */
+@media only screen and (min-device-width : 411px) and (max-device-width : 568px) and (orientation : landscape) {
+}
