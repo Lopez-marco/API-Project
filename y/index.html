@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
-  <link  rel="stylesheet" href="index.css">
-  <title>Taste the food!</title>
-</head>
-<body>
-  <div class="jumbotron">
-    <h1 class="display-4">Taste the food! <br>
-</h1>
-    <p class="lead" style='font-size: 35px;'>Are you hungry? Have no idea what to cook? <br>Then Welcome you have arrived to the right place!</p>
-    <hr class="my-4" style='font-size: 30px;'>
-    <p>This website is designed to help you find the perfect Recipe for any occasion, from a family meal time with kids, to the perfect dinner date.<br>Morning breakfast?<br>Late night snack? <br>But Shhhhh! Remember no to wake up the little ones.<br>You name it! We have it all.</p>
-
-    <h1 class="display-4">But first a Food Joke!</h1>
-  </div>
-
-  <div class="wrapper">
-    <div class="card">
-      <img src="https://img.icons8.com/officel/40/000000/joker.png"/>
-      <!-- <h1>
-        How did Burger King get Dairy Queen Pregnant? He forgot to wrap his whopper!sd asd aasd asd asd asd ggfa
-      </h1> -->
-    </div>
-  </div>
-<br>
-<br>
-<br>
-  <h2>Search for a Recipe</h2>
-  <div class="wrapper-recipe">
-    <div class="controls">
-      <form>
-        <p>
-          <label for="search" style="color:white, ">Search for a recipe:</label>
-          <input id="text" id="search" class="search" required style="color: black"><button class="submit">Submit search</button>
-        </p>
-      </form>
-    </div>
-    <div class="results">
-      <section>
-
-      </section>
-    </div>
-  </div>
-
-  <footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Taste the food!</title>
+  </head>
+  <body>
     <div class="jumbotron">
-      <h1 class="display-4"></h1>
-      <p class="lead"></p>
-      <hr class="my-4">
-      <p></p>
+      <h1 class="display-4">Taste the food! <br /></h1>
+      <p class="lead" style="font-size: 35px;">
+        Are you hungry?<br />Have no idea what to cook?<br />Welcome, you have
+        arrived at the right place!
+      </p>
+      <hr class="my-4" style="font-size: 30px;" />
+      <p>
+        This website is designed to help you find the perfect recipe for any
+        occasion,<br />
+        from a family meal time with kids, to the perfect dinner date.
+        <br />Morning breakfast?<br />Late night snack?<br />But Shhhhh!
+        Remember not to wake up the little ones.<br />You name it! We have it
+        all.
+      </p>
     </div>
-  </footer>
-  <!--Firebase-->
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
+    <h2>Search for a Recipe</h2>
+    <div class="wrapper-recipe">
+      <div class="controls">
+        <form>
+          <p class="text-center">
+            <label for="search" style="color: white;"></label>
+            <input
+              id="text"
+              id="search"
+              class="text-center"
+              required
+              style="color: black;"
+            /><button class="submit">Submit search</button>
+          </p>
+        </form>
+      </div>
+      <div class="results">
+        <section></section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="jumbotron">
+        <h1 class="display-4"></h1>
+        <p class="lead"></p>
+        <hr class="my-4" />
+        <p><br /><br /></p>
+      </div>
+    </footer>
+    <!--Firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAvJGSJCZzzlxD_93S1MfNgxvc-uISGM4o",
-      authDomain: "mal-api.firebaseapp.com",
-      databaseURL: "https://mal-api.firebaseio.com",
-      projectId: "mal-api",
-      storageBucket: "mal-api.appspot.com",
-      messagingSenderId: "426830698834",
-      appId: "1:426830698834:web:3ce783f8dc5521ad9d028b"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAvJGSJCZzzlxD_93S1MfNgxvc-uISGM4o",
+        authDomain: "mal-api.firebaseapp.com",
+        databaseURL: "https://mal-api.firebaseio.com",
+        projectId: "mal-api",
+        storageBucket: "mal-api.appspot.com",
+        messagingSenderId: "426830698834",
+        appId: "1:426830698834:web:3ce783f8dc5521ad9d028b",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
-  <!----bootstrap-->
-  <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <!--my script-->
-  <script src="index.js"></script>
-</body>
-
+    <!----bootstrap-->
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!--my script-->
+    <script src="index.js"></script>
+  </body>
 </html>
